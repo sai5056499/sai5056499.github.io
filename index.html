@@ -12,34 +12,39 @@
     <!-- icons link -->
     <script src="https://kit.fontawesome.com/8c52fd3d0a.js" crossorigin="anonymous"></script>
     <style>
+        .coding-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
         .profile-link {
-            display: inline-block;
             text-align: center;
             margin: 10px;
-            text-decoration: none;
         }
 
         .coding-img {
+            width: 100px;
+            height: auto;
             display: block;
             margin: 0 auto;
-            width: 50px; /* Adjust as needed */
-            height: auto;
         }
 
         .profile-button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
+            background-color: #4CAF50;
             color: white;
-            background-color: #007BFF; /* Change color as needed */
             border: none;
-            border-radius: 5px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 0;
             cursor: pointer;
+            font-size: 16px;
         }
 
         .profile-button:hover {
-            background-color: #0056b3; /* Change hover color as needed */
+            background-color: #45a049;
         }
     </style>
 </head>
@@ -55,7 +60,7 @@
                 <li> <a href="#coding" class="nav-link extra">Coding Profiles</a> </li>
                 <li> <a href="#contact" class="nav-link extra">Contact</a> </li>
                 <li> <a href="https://drive.google.com/file/d/1zIiDI80qcxPVVykZLyHqWXixmX88XH4k/view?usp=drivesdk"
-                        class=" nav-link resume" target="_blank">Resume</a> </li>
+                        class="nav-link resume" target="_blank">Resume</a> </li>
             </ul>
             <div class="menu-icon">
                 <div class="line1"></div>
@@ -67,29 +72,28 @@
     <section class="home container" id="home">
         <div class="home-content">
             <div class="home-img">
-                <img src="Pic/pavan1.jpg" alt="">
+                <img src="https://via.placeholder.com/150" alt="Pavan">
             </div>
             <div class="home-text">
                 <h1 class="name"><span class="color">C.Sai Pavan</span></h1>
                 <p>A passionate <span class="color bold">Web Developer</span> and <span class="color bold">Competitive
                         Programmer</span>.</p>
                 <div class="social">
-                    <a href="https://github.com/sai5056499" target="_blank"><img class="bx" src="github.png"
-                            alt=""></a>
+                    <a href="https://github.com/sai5056499" target="_blank"><img class="bx" src="https://image.shutterstock.com/image-photo/kiev-ukraine-october-3-2018-260nw-1180176665.jpg"
+                            alt="GitHub"></a>
                     <a href="https://www.linkedin.com/in/sai-pavan-270b84257/?originalSubdomain=in" target="_blank"><img class="bx"
-                            src="Pic/linkedin.png" alt=""></a>
+                            src="https://image.shutterstock.com/image-photo/kiev-ukraine-october-3-2018-260nw-1180176665.jpg" alt="LinkedIn"></a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- <hr> -->
-    <section class="about">
+    <section class="about" id="about">
         <h2 id="heading">
             About Me
         </h2>
         <div class="about-content">
             <div class="img">
-                <img src="https://c.tenor.com/FABadXdQ65MAAAAC/hi-hello.gif" alt="">
+                <img src="https://c.tenor.com/FABadXdQ65MAAAAC/hi-hello.gif" alt="Hi">
             </div>
             <div class="para">
                 <p>Hello there!</p>
@@ -103,10 +107,8 @@
                 </p>
             </div>
         </div>
-        </div>
     </section>
-    <!-- <hr> -->
-    <section class="projects">
+    <section class="projects" id="project">
         <h2 id="heading1">
             Projects
         </h2>
@@ -115,10 +117,10 @@
                 <div class="subitem">
                     <h2 class="project-heading">to-do list</h2>
                     <a href="https://sai5056499.github.io/to-do-list/" target="_blank">
-                        <img src="./Pic/world-wide-web.png" alt="">
+                        <img src="https://via.placeholder.com/150" alt="To-do list">
                     </a>
                     <a href="https://github.com/sai5056499/web-dev-projects/tree/main/to-do%20list" target="_blank">
-                        <img src="./Pic/programming-code-signs.png" alt="">
+                        <img src="https://via.placeholder.com/150" alt="Code">
                     </a>
                 </div>
                 <p class="about-project">This is an application which provides features of adding a note, deleting a note and searching.</p>
@@ -132,11 +134,11 @@
                 <div class="subitem">
                     <h2 class="project-heading">Image slider</h2>
                     <a href="https://sai5056499.github.io/slider/" target="_blank">
-                        <img src="./Pic/world-wide-web.png" alt="">
+                        <img src="https://via.placeholder.com/150" alt="Image slider">
                     </a>
                     <a href="https://github.com/sai5056499/web-dev-projects/tree/main/slider" target="_blank">
-                        <img src="./Pic/programming-code-signs.png" alt="">
-		    </a>
+                        <img src="https://via.placeholder.com/150" alt="Code">
+                    </a>
                 </div>
                 <p class="about-project">An image slider provides a sleek, interactive way to display multiple images with smooth transitions.</p>
                 <div class="tags">
@@ -149,11 +151,11 @@
                 <div class="subitem">
                     <h2 class="project-heading">Text Converter Website</h2>
                     <a href="https://text-conerter-0da487b5.netlify.app/" target="_blank">
-                        <img src="./Pic/world-wide-web.png" alt="">
+                        <img src="https://via.placeholder.com/150" alt="Text Converter">
                     </a>
                     <a href="https://github.com/deepak0byte/Text-Converter" target="_blank">
-                        <img src="./Pic/programming-code-signs.png" alt="">
-		    </a>
+                        <img src="https://via.placeholder.com/150" alt="Code">
+                    </a>
                 </div>
                 <p class="about-project">Text Converter provides features to convert a text into uppercase, lowercase, and also to clear it.</p>
                 <div class="tags">
@@ -168,76 +170,85 @@
                 <div class="subitem">
                     <h2 class="project-heading">Portfolio Website</h2>
                     <a href="https://sai5056499.github.io/" target="_blank">
-                        <img src="./Pic/world-wide-web.png" alt="">
+                        <img src="https://via.placeholder.com/150" alt="Portfolio">
                     </a>
                     <a href="https://github.com/sai5056499/sai5056499.github.io" target="_blank">
-                        <img src="https://www.google.com/imgres?q=programming%20code%20logo&imgurl=https%3A%2F%2Fcdn.vectorstock.com%2Fi%2F1000v%2F96%2F92%2Fprogramming-code-icon-abstract-logo-vector-20289692.jpg&imgrefurl=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Fprogramming-code-icon-abstract-logo-vector-20289692&docid=z5qCgK3nP-PeHM&tbnid=WeLJnaOtT4V9VM&vet=12ahUKEwi907am2Y2HAxXkXGwGHTMlAcYQM3oECGAQAA..i&w=1000&h=1080&hcb=2&ved=2ahUKEwi907am2Y2HAxXkXGwGHTMlAcYQM3oECGAQAA" alt="">
+                        <img src="https://via.placeholder.com/150" alt="Code">
                     </a>
                 </div>
                 <p class="about-project">I have created a portfolio where you can view my projects, my resume, and my coding profiles.</p>
                 <div class="tags">
-                    <button class="tag">HTML</
-			                        <button class="tag">CSS</button>
+                    <button class="tag">HTML</button>
+                    <button class="tag">CSS</button>
                     <button class="tag">Javascript</button>
                 </div>
             </div>
         </div>
     </section>
-    <!-- <hr> -->
-    <section class="coding">
+    <section class="coding" id="coding">
         <h2 id="heading2">
             Coding Profiles
         </h2>
         <div class="coding-items">
             <div class="profile-link">
-                <img class="coding-img" src="https://s3.amazonaws.com/codechef_shared/sites/all/themes/abessive/logo.svg" alt="CodeChef">
+                <                <a href="https://www.codechef.com/users/sai50544" target="_blank">
+                    <img class="coding-img" src="https://via.placeholder.com/100" alt="CodeChef">
+                </a>
                 <a href="https://www.codechef.com/users/sai50544" target="_blank">
                     <button class="profile-button">CodeChef</button>
                 </a>
             </div>
             <div class="profile-link">
-                <img class="coding-img" src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode">
+                <a href="https://leetcode.com/sai5056499/" target="_blank">
+                    <img class="coding-img" src="https://via.placeholder.com/100" alt="LeetCode">
+                </a>
                 <a href="https://leetcode.com/sai5056499/" target="_blank">
                     <button class="profile-button">LeetCode</button>
                 </a>
             </div>
             <div class="profile-link">
-                <img class="coding-img" src="https://sta.codeforces.com/s/74864/images/codeforces-logo-with-telegram.png" alt="Codeforces">
+                <a href="https://codeforces.com/profile/pavan1010222" target="_blank">
+                    <img class="coding-img" src="https://via.placeholder.com/100" alt="Codeforces">
+                </a>
                 <a href="https://codeforces.com/profile/pavan1010222" target="_blank">
                     <button class="profile-button">Codeforces</button>
                 </a>
             </div>
             <div class="profile-link">
-                <img class="coding-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/GeeksforGeeks.svg/1200px-GeeksforGeeks.svg.png" alt="GeeksforGeeks">
+                <a href="https://www.geeksforgeeks.org/user/sai505w7wi/" target="_blank">
+                    <img class="coding-img" src="https://via.placeholder.com/100" alt="GeeksforGeeks">
+                </a>
                 <a href="https://www.geeksforgeeks.org/user/sai505w7wi/" target="_blank">
                     <button class="profile-button">GeeksforGeeks</button>
                 </a>
             </div>
             <div class="profile-link">
-                <img class="coding-img" src="https://static.naukimg.com/s/7/109/assets/images/naukri_Logo.png" alt="Naukri">
+                <a href="https://www.naukri.com/code360/profile/Sai5056499" target="_blank">
+                    <img class="coding-img" src="https://via.placeholder.com/100" alt="Naukri">
+                </a>
                 <a href="https://www.naukri.com/code360/profile/Sai5056499" target="_blank">
                     <button class="profile-button">Naukri</button>
                 </a>
             </div>
         </div>
     </section>
-    <!-- <hr> -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2 id="heading3">
             Contact
         </h2>
         <form action="" class="contact-form" id="contact-form">
             <input type="text" placeholder="Your Name" class="yourname" required>
             <input type="email" name="" id="" placeholder="Email address..." class="email" required>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Write message here..." required class="message"></textarea>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Write message here..." required
+                class="message"></textarea>
             <input type="submit" value="send" class="send-btn">
         </form>
     </section>
-    <!-- <hr> -->
     <section class="footer">
-        <p>&#169; Copyright 2022 | C.Sai Pavan</p>
+        <p>&#169 Copyright 2022 | C.Sai pavan</p>
     </section>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
     <script type="text/javascript">
         (function () {
             emailjs.init("vVwo3TfnMTqowGzL4");
@@ -245,7 +256,9 @@
     </script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
     <script src="main.js"></script>
 </body>
 
 </html>
+
